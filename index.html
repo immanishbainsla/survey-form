@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project : 2 Survey Form(Final)</title>
+  <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="author" content="immanishbainsla"/>
+<link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"/> 
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!-- to check efficiency of form -->
+
+  
+<!-- TITLE text -->
+<h1 id="title">
+ Survey form
+</h1>
+<!-- OUTER div -->
+<div id="outer-div">
+
+<!-- DESCRIPTION text -->
+<p id="description">
+  Let us know how we can improve <a href="https://codepen.io" target="_blank">CODEPEN</a>  
+</p>
+
+<!-- SURVEY form -->
+    <form action="submit" method="post" id="survey-form">
+      
+<!--       NAME row -->
+      <div class="row">
+        <div class="label">
+          <label name="name" id="name-label">* Name :</label>
+        </div>
+        <div class="right-tab">
+          <input type="text" name="name" id="name" required placeholder="Enter your Name" class="input-field"/>
+        </div>
+      </div>
+        
+<!--       EMAIL row -->
+      <div class="row">
+        <div class="label">
+          <label name="email" id="email-label">* Email :</label>
+        </div>
+         <div class="right-tab">
+          <input type="email" name="email" id="email" required placeholder="Enter your Email" class="input-field"/>
+        </div>
+      </div>
+      
+<!--       AGE row -->
+      <div class="row">
+        <div class="label">
+          <label name="number" id="number-label">* Age :</label>
+        </div>
+        <div class="right-tab">
+          <input type="number" name="number" id="number" required placeholder="Enter your Age" min="0" max="80" class="input-field"/>
+        </div>
+      </div>
+      
+<!--       DROPDOWN list -->
+      <div class="row">
+        <div class="label">
+          <label for="role">Select Your Current Role :</label>        
+        </div>
+        <div class="right-tab">
+          <select name="role" id="dropdown" >
+            <option name="role" value="student">Student</option>
+            <option name="role" value="intern">Intern</option>
+            <option name="role" value="fulltimedev">Full Time Developer</option>
+            <option name="role" value="parttimedev">Part Time Developer</option>
+            <option name="role" value="notprefer">Prefer not to Say</option>
+            <option name="role" value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      
+<!--       RADIO buttons -->
+      <div class="row">
+        <div class="label">
+          <label for"bestpart">Best Part About CODEPEN :</label>
+        </div>
+        <div class="right-tab">
+            <ul style="list-style: none;">
+              <li class="radio"><label for="bestpart"><input type="radio" name="radio-buttons" value="community" class="bestpart" checked/>Open Source Community</label></li>
+              <li class="radio"><label for="bestpart"><input type="radio" name="radio-buttons" value="ide" class="bestpart"/>IDE/Live Preview</label></li>
+              <li class="radio"><label for="bestpart"><input type="radio" name="radio-buttons" value="project" class="bestpart"/>Projects/Pens</label></li>
+              <li class="radio"><label for="bestpart"><input type="radio" name="radio-buttons" value="notprefer" class="bestpart"/>Prefer not to Say</label></li>
+              <li class="radio"><label for="bestpart"><input type="radio" name="radio-buttons" value="other" class="bestpart"/>Other</label></li>
+            </ul>
+        </div>
+      </div>
+      
+<!--       CHECKBOXES -->
+      <div class="row">
+        <div class="label">
+          <label for="improvement">Things should be Improved/Added<br/> in Future :</label>
+        </div>
+        <div class="right-tab">
+          <ul style="list-style: none;">
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="backend-dev" class="bestpart" checked/>Backend Developer IDE</label></li>
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="frontend-dev" class="bestpart"/>Frontend Developer IDE</label></li>
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="community" class="bestpart"/>Community</label></li>
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="add-ide" class="bestpart"/>Additional Language IDE</label></li>
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="dashboard-view" class="bestpart"/>Dashboard View</label></li
+            <li class="checkboxes"><label for="checkboxes"><input type="checkbox" name="checkbox" value="other" class="bestpart"/>If any Other Mention in Comment Box</label></li>
+          </ul>
+        </div>  
+      </div>
+      
+<!--       COMMENT box -->
+      <div class="row">
+        <div class="label">
+          <label for="comment">Any Comment (optional):</label>
+        </div>
+        <div class="right-tab">
+          <textarea rows="4" cols="35" placeholder="Comment, If any....." class="input-field"></textarea>
+        </div>
+      </div>
+        
+<!--      Submit button -->
+      <div class="row">
+        <input type="submit" value="Submit" id="submit"/>
+      </div>
+      
+  </form>
+  
+    </div>
+
+<!-- FOOTER -->
+<footer>
+  <p id="footer">Copyright: &copy;<a href="https://linktr.ee/immanishbainsla" target="_blank">@immanishbainsla</a>
+  </p>
+</footer>
+  
+  
+
+</body>
+
+</html>
