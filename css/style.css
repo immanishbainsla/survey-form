@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:500i');
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
-
 /* BODY */
 body{
   padding: 0;
@@ -10,7 +9,6 @@ body{
   background: #DEF8FF;
   min-width: 320px;
 }
-
 /* OUTER div */
 #outer-div{
   width: 60%;
@@ -21,7 +19,6 @@ body{
   background-color: #FEF5FF; 
   font-family: 'Quicksand', sans-serif;
 }
-
 /* TITLE tag */
 #title{
   font-size: 60px;
@@ -34,8 +31,6 @@ body{
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
-
-
 /* DESCRIPTION tag */
 #description{
   padding: 0;
@@ -46,14 +41,12 @@ body{
   box-sizing: border-box;
   color: #5375DF;
 }
-
 /* #ROW */
 .row{
   width: 100%;
   box-sizing: border-box;
   margin-top: 7px;
 }
-
 /* DIV#label */
 .label{
   padding: 0;
@@ -67,7 +60,6 @@ body{
   padding: 5px;
   color: #1C59AC;
 }
-
 /* DIV#right-tab */
 .right-tab{
   padding: 0;
@@ -79,7 +71,6 @@ body{
   vertical-align: middle;
   color: #3C0526;
 }
-
 /* INPUT tag */
 #name,#email,#number,#dropdown,textarea{
   height: 33px;
@@ -89,22 +80,18 @@ body{
   padding: 5px;
   font-size: 15px;
 }
-
 textarea{
   height: 60px;
 }
-
 /* LIST */
 ul{
   padding: 0;
   margin: 0;
 }
-
 li{
   margin-bottom: 5px;
   font-size: 17px;
 }
-
 /* SUBMIT button */
 #submit{
   width: 30%;
@@ -119,97 +106,74 @@ li{
   border-radius: 10px;
   color: #1C59CC;
 }
-
 /* ANCHOR tag */
 a{
   text-decoration: none;
   color: #FC7587;  
 }
-
 footer{
   width: 100%;
   text-align: center;
   color: #FA3B3B;
   font-size: 25px;
 }
-
 #footer{
     font-family: font-family: 'Gamja Flower', cursive;
 }
-
 /* HOVER */
 #submit:hover{
   font-weight: bold;
 }
-
 a:hover{
   font-size: 35px;
   color: #7B7CF8;
 }
-
 #name:hover{
   border-color: #94FFFF;
 }
-
 #email:hover{
   border-color: #94FFFF;
 }
-
 #number:hover{
   border-color: #94FFFF;
 }
-
-
 /* RESPONSIVE */
 @media screen and (max-width: 833px){
-  
   .input-field{
     width: 70%;
   }
-  
   select{
     width: 80%;
   }
-
   #submit{
     width: 40%;
   }
-  
 }
-
 @media screen and (max-width: 520px){
-  
   #outer-div{
     width: 90%;  
   }
-  
   .label{
     width: 100%;
     text-align: left;
     margin-top: 20px;
   }
-  
   label{
     cursor: pointer;
   }
-  
   .right-tab{
     width: 75%;
     float: left;
     margin-left: 10%;
   }
-  
   .input-field{
     width: 100%;
   }
-  
   select{
     width: 100%;
   }
-  
   #submit{
     width: 40%;
     margin-left: 30%;
   }
-  
 }
