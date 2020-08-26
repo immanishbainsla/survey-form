@@ -125,7 +125,7 @@ footer{
   font-weight: bold;
 }
 a:hover{
-  font-size: 35px;
+/*   font-size: 35px; */
   color: #7B7CF8;
 }
 #name:hover{
